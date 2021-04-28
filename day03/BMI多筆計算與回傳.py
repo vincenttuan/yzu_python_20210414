@@ -22,6 +22,6 @@ bmi2 = getBMI(180, 90)
 print(bmi1, bmi2)
 
 bmi3, result3 = getBMIAndResult(170, 60)
-bmi4, result4 = getBMIAndResult(170, 60)
+bmi4, result4 = getBMIAndResult(180, 90)
 print(bmi3, result3)
 print(bmi4, result4)
