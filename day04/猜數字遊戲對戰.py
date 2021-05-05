@@ -23,6 +23,7 @@ while count > 0:
 
     # 電腦猜
     guess = r.randint(min+1, max-1)
+    print('(%d). 電腦猜 %d ~ %d : %d' % (count, min, max, guess))
     # 判定結果
     if guess > ans:
         max = guess
