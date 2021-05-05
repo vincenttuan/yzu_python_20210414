@@ -14,3 +14,9 @@ print('有幾個單字:', str.count(' ') + 1)
 # 是否都是英文字(a-zA-Z)
 # 小技巧: 先利用 replace 將中間的空白去除
 print('是否都是英文字:', str.replace(' ', '').isalpha())
+print(str[2])
+print(str[0:3]) # 取出0~3位置的字串(不含3)
+path = 'C:\temp\nba\score.py'
+print('路徑位置:', path)
+path = r'C:\temp\nba\score.py'
+print('路徑位置:', path)
