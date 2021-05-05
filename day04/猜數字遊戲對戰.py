@@ -2,7 +2,7 @@ import random as r
 ans = r.randint(1, 99)
 min = 0
 max = 100
-count = 50
+count = 5
 while count > 0:
     # 使用者猜
     guess = int(input('(%d). 請輸入 %d ~ %d : ' % (count, min, max)))
@@ -10,8 +10,7 @@ while count > 0:
     if guess <= min or guess >= max:
         print('數字範圍錯誤')
         continue
-    # 將 count 減去一次
-    count = count - 1
+
     # 判定結果
     if guess > ans:
         max = guess
@@ -32,3 +31,6 @@ while count > 0:
     else:
         print('電腦答對了')
         break
+
+    # 將 count 減去一次
+    count = count - 1
