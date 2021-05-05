@@ -14,6 +14,7 @@ def check(guess, who):
     else:
         print('%s答對了' % who)
         return True
+
     return False
 
 while count > 0:
