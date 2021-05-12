@@ -17,3 +17,12 @@ for e in error_scores:
     scores.pop(scores.index(e))
 
 print(scores)
+
+# 反序
+scores = [1, 7, 3, 5]
+scores.reverse()
+print(scores)
+
+# 排序
+scores.sort()
+print(scores)
