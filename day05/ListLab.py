@@ -15,6 +15,7 @@ print('體重 cv:', '%.2f%%' % (w_cv * 100))
 # 繪圖
 font = mpl.font_manager.FontProperties(fname=r"c:\windows\fonts\simsun.ttc", size=14)
 plt.plot(no, h, marker='o', color=(255/255, 0/255, 0/255))
+#plt.plot(no, w, marker='o', color=(0/255, 0/255, 255/255))
 plt.grid(True)
 plt.title('身高統計表', fontproperties=font)
 plt.show()
