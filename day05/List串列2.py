@@ -1,3 +1,5 @@
+import random as r
+
 scores = [100, -10, -20, 90, -80, 999]
 print(scores)
 # error_score = scores.pop(1)
@@ -18,11 +20,15 @@ for e in error_scores:
 
 print(scores)
 
-# 反序
+# 反轉
 scores = [1, 7, 3, 5]
 scores.reverse()
 print(scores)
 
 # 排序
 scores.sort()
+print(scores)
+
+# 洗牌 (請先 import random as r)
+r.shuffle(scores)
 print(scores)
