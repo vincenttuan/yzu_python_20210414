@@ -10,3 +10,7 @@ salary.setdefault('Bob', 70000)
 print(salary)
 
 # 求薪資總和
+sum = 0
+for key in salary:
+    sum = sum + salary[key]
+print(sum)
