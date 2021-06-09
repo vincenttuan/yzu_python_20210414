@@ -1,4 +1,4 @@
-# 裝飾器
+# 裝飾器 1
 
 def make_dress(func):
     def dress():
