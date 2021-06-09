@@ -21,4 +21,8 @@ avg = sum / len(employees)
 print("薪資總合:", sum)
 print("薪資平均:", avg)
 
-# 請問最高薪的人名是 ?
+# 請問最高/低薪的人名是 ?
+emp_max = max(employees, key=lambda e: e['salary'])
+emp_min = min(employees, key=lambda e: e['salary'])
+print(emp_max, emp_max['name'])
+print(emp_min, emp_min['name'])
