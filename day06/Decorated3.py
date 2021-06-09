@@ -12,9 +12,18 @@ def make_shoes(func):
         func()
     return shoes
 
+@make_dress
+@make_shoes
 def out():
     print("我出門了")
 
+@make_shoes
+def out2():
+    print("我出門了")
 
-john = make_dress(out)
+#john = make_dress(make_shoes(out))
+john = out
 john()
+
+tom = out2
+tom()
