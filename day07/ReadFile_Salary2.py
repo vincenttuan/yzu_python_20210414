@@ -20,3 +20,5 @@ avg = sum / len(employees)
 
 print("薪資總合:", sum)
 print("薪資平均:", avg)
+
+# 請問最高薪的人名是 ?
