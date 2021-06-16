@@ -1,16 +1,16 @@
-class Person:
-    name = ''
-    sex = ''
-    age = 0
+class Person:  # 類別, 物件的規格書(藍圖)
+    name = ''  # 屬性(物件變數)
+    sex  = ''
+    age  = 0
 
 
 # python 的主程式
 #print(__name__)
 if __name__ == '__main__':
-    p1 = Person()
-    p1.name = 'Vinent'
-    p1.sex = '男'
-    p1.age = 18
+    p1 = Person()  # 建立物件
+    p1.name = 'Vinent'  # 設定物件變數/屬性內容
+    p1.sex  = '男'
+    p1.age  = 18
     p2 = Person()
     p2.name = 'Anita'
     p2.sex = '女'

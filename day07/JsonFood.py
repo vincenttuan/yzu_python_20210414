@@ -12,9 +12,9 @@ for d in data:
     bad_foods.append(food)
 
 print(bad_foods)
-
 print()
 
+# 分析資料
 for food in bad_foods:
     if '池上' in food['品名']:
         print(food)
