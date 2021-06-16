@@ -12,7 +12,7 @@ class Son(Father):
     age = 0
 
     def __init__(self, amount, age) -> None:
-        super().__init__(amount)
+        super().__init__(amount)  # Father.__init__(self, amount)
         self.age = age
 
     def __str__(self) -> str:
