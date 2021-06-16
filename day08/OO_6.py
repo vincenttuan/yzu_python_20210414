@@ -7,6 +7,15 @@ class Salary:
         if amount > 0:
             self.salary = self.salary + amount
 
+    def __eq__(self, other):  # ==
+        return self.salary == other.salary
+
+    def __lt__(self, other):  # <
+        return self.salary < other.salary
+
+    def __gt__(self, other):  # >
+        return self.salary > other.salary
+
     def __str__(self) -> str:
         return self.name + " $" + str(self.salary)
 
