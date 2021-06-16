@@ -16,3 +16,5 @@ if __name__ == '__main__':
     p2.sex = '女'
     p2.age = 19
     print(p1, p2)
+    print(p1.name, p1.sex, p1.age)
+    print(p2.name, p2.sex, p2.age)
