@@ -1,10 +1,10 @@
 import sqlite3
 
 sql = '''
-      create table Employee(
+      create table Stock(
         id integer primary key not null,
         name varchar(20) not null,
-        salary real
+        price real
       )  
       '''
 conn = sqlite3.connect('demo.db')
