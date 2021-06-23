@@ -9,6 +9,7 @@ cursor.execute(sql)
 rows = cursor.fetchall()
 #print(rows)
 for r in rows:
-    print('{}\t{}\t{}\t{}\t{}\t{}\t{}'.format(r[0], r[1], r[2], r[3], r[4], r[5], r[6]))
+    #print('{}\t{}\t{}\t{}\t{}\t{}\t{}'.format(r[0], r[1], r[2], r[3], r[4], r[5], r[6]))
+    print('%d\t%d\t%d\t%d\t%d\t%d\t%s' % (r[0], r[1], r[2], r[3], r[4], r[5], r[6]))
 
 conn.close()
