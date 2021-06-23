@@ -1,0 +1,5 @@
+File -> settings -> Project Interpreter -> 按下[+] -> 安裝 py-opencv
+
+Terminal -> pip install opencv-python
+
+Terminal -> pip install opencv_contrib_python
