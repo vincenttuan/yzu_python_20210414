@@ -2,7 +2,7 @@ import sqlite3
 import random
 
 stocks = []
-for i in range(100):
+for i in range(10):
     stock = []
     stock.append(i+1)
     stock.append('2330')
