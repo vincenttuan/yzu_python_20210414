@@ -10,6 +10,9 @@ print(df)
 ma = df['price'].rolling(window=2).mean()  # window=2 二點計算一個平均
 plt.plot(df['id'], df['price']) # 繪製折線圖
 plt.plot(df['id'], ma) # 繪製移動平均線
+# 圖例
+plt.xlabel('day')
+plt.ylabel('price')
 plt.show()
 
 conn.close()
