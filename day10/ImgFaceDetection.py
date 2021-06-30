@@ -24,17 +24,20 @@ for (x, y, w, h) in faces:
 
     #-------------------------------------------------------------
 
-    roi_gray = gray[y:y + h, x:w + h]
-    roi_img  =  img[y:y + h, x:w + h]
+    roi_gray = gray[y:y + h, x:x + w]
+    roi_img = img[y:y + h, x:x + w]
 
     smile = smile_cascade.detectMultiScale(
-        roi_gray,
-        scaleFactor=1.1,   # 檢測粒度
-        minNeighbors=10,   # 每個目標至少偵測到幾次以上才被認定
-        minSize=(30, 30),  # 搜尋的最小尺寸
-        flags=cv2.CASCADE_SCALE_IMAGE  # 針對影像
+        roi_gray,  # 待檢測圖片，一般來說設定成灰度圖像可以加快檢測速度
+        scaleFactor=1.1,  # 檢測粒度。若粒度增加會加速檢測速度，但會影響準確率
+        minNeighbors=2,  # 每個目標至少要檢測到幾次以上，才被認定是真數據
+        minSize=(30, 30),  # 數據搜尋的最小尺寸
+        flags=cv2.CASCADE_SCALE_IMAGE
     )
-    cv2.rectangle(roi_img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+
+    print("smile:", len(smile), smile)
+    for (sx, sy, sw, sh) in smile:
+        cv2.rectangle(roi_img, (sx, sy), (sx + sw, sy + sh), (255, 0, 0), 2)
 
     # -------------------------------------------------------------
 
