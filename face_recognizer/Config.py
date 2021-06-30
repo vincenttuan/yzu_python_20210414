@@ -1,7 +1,7 @@
 import cv2
 
 # 訓練對象人名(請輸入自己的名字) ?
-MY_NAME = 'UNKNOW'
+MY_NAME = 'vincent'
 
 # 樣本素材張數
 SAMPLE_AMOUNT = 200

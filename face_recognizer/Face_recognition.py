@@ -95,7 +95,7 @@ if __name__ == '__main__':
                 cv2.putText(frame, Config.MY_NAME, (x, y - 7), 2, 1.2, (0, 255, 0), 2)
 
             # 跳出循環偵測回圈
-            break
+            #break
         else:
             # 印出辨識失敗
             print('辨識失敗 face_recognizer!')
