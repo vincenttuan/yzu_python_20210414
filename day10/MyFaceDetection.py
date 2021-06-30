@@ -17,6 +17,11 @@ while True:
 
     img = cv2.flip(img, 1)  # 鏡像處理
 
+    # 人臉偵測並畫紅框 ------------------------
+
+
+
+
     # 顯示在 ui 上
     cv2.imshow('My face', img)
 
