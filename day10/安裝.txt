@@ -1,5 +1,9 @@
 File -> settings -> Project Interpreter -> 按下[+] -> 安裝 py-opencv
 
+Terminal -> pip uninstall opencv-python
+
+Terminal -> pip uninstall opencv_contrib_python
+
 Terminal -> pip install opencv-python
 
 Terminal -> pip install opencv_contrib_python
