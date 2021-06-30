@@ -2,7 +2,7 @@ import cv2
 
 face_cascade = cv2.CascadeClassifier('./xml/haarcascade_frontalface_alt.xml')
 
-img = cv2.imread('./image/people.jpg')
+img = cv2.imread('./image/test.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faces = face_cascade.detectMultiScale(
@@ -16,6 +16,9 @@ faces = face_cascade.detectMultiScale(
 print("faces: ", len(faces), faces)
 
 for (x, y, w, h) in faces:
+    # 繪文字 putText(來源, 文字, 左下座標, 字型, 字型大小, 文字顏色, 文字線條寬度)
+    cv2.putText(img, 'Anita', (x, y-10), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
+    # 畫框
     cv2.rectangle(img, (x, y), (x+w, y+h), (0, 0, 255), 2)
 
 cv2.imshow('Face', img)
