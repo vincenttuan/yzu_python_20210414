@@ -1,7 +1,7 @@
 import cv2
 
-face_cascade = cv2.CascadeClassifier('./xml/haarcascade_frontalface_default.haarcascades')
-mouth_cascade = cv2.CascadeClassifier('./xml/haarcascade_mcs_mouth.haarcascades')
+face_cascade = cv2.CascadeClassifier('./xml/haarcascade_frontalface_default.xml')
+mouth_cascade = cv2.CascadeClassifier('./xml/haarcascade_mcs_mouth.xml')
 
 # Adjust threshold value in range 80 to 105 based on your light.
 bw_threshold = 80
