@@ -1,6 +1,6 @@
 import cv2
 
-face_cascade = cv2.CascadeClassifier('./xml/haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier('./xml/haarcascade_frontalface_default.xml')
 mouth_cascade = cv2.CascadeClassifier('./xml/haarcascade_mcs_mouth.xml')
 
 # Adjust threshold value in range 80 to 105 based on your light.
@@ -9,8 +9,10 @@ bw_threshold = 80
 # User message
 font = cv2.FONT_HERSHEY_SIMPLEX
 org = (30, 30)
-weared_mask_font_color = (255, 255, 255)
+weared_mask_font_color = (0, 255, 0)
 not_weared_mask_font_color = (0, 0, 255)
+no_face_color = (255, 255, 255)
+
 thickness = 2
 font_scale = 1
 weared_mask = "Thank You for wearing MASK"
@@ -39,7 +41,7 @@ while 1:
 
 
     if(len(faces) == 0 and len(faces_bw) == 0):
-        cv2.putText(img, "No face found...", org, font, font_scale, weared_mask_font_color, thickness, cv2.LINE_AA)
+        cv2.putText(img, "No face found...", org, font, font_scale, no_face_color, thickness, cv2.LINE_AA)
     elif(len(faces) == 0 and len(faces_bw) == 1):
         # It has been observed that for white mask covering mouth, with gray image face prediction is not happening
         cv2.putText(img, weared_mask, org, font, font_scale, weared_mask_font_color, thickness, cv2.LINE_AA)
