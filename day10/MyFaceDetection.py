@@ -6,8 +6,8 @@ face_cascade = cv2.CascadeClassifier('./xml/haarcascade_frontalface_alt.xml')
 cap = cv2.VideoCapture(0)
 
 # 設定捕捉區域
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1024)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 768)
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)   # 1024
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)  # 768
 
 while True:
     # ret: True/False
